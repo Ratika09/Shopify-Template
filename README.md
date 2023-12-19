@@ -1,46 +1,48 @@
-# Shopify Product Detail Template
+# Shopify Theme Template
 
-This repository contains a Shopify template and assets to display product details on your Shopify store.
+This repository contains a Shopify theme template designed for store. The theme is providing a responsive and user-friendly shopping experience.
 
-## Files Included
+## Table of Contents
 
-### Templates
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Customization](#customization)
 
-#### 1. templates/product-detail.liquid
+## Installation
 
-This file represents the main product detail template. To use it, follow these steps:
-- Copy the content of product-detail.liquid.
-- In your Shopify Admin, navigate to Online Store > Themes.
-- Choose your theme and click Actions > Edit code.
-- Create a new template file named product-detail and paste the copied content.
-- Save the changes.
+To install this theme, follow these steps:
 
-#### 2. section/product-detail.liquid
+1. **Clone the Repository:**
 
-This file includes the section for the product detail. To integrate it:
-- Copy the content of product-detail.liquid.
-- In your Shopify Admin, go to Customize your theme.
-- Add a new section named Product Detail and paste the copied content.
-- Save and publish the changes.
+    ```bash
+    gh repo clone Ratika09/Shopify-Template
+    ```
 
-### Assets
+2. **Upload to Shopify:**
 
-#### 1. assets/product-form.js
+    Upload the entire contents of the `theme` folder to your Shopify store.
 
-This JavaScript file includes functionalities related to the product form, such as adding items to the cart. To utilize it:
-- Link this JavaScript file to your product detail template.
-- Integrate the functions provided in product-form.js to enable cart functionalities.
+3. **Activate the Theme:**
 
-## How to Use
+    - Log in to your Shopify Admin.
+    - Navigate to **Online Store > Themes**.
+    - Find the theme titled "[Your Theme Name]" and click **Publish**.
 
-1. **Product Detail Template:**
-   - Apply the product-detail template to product pages in your Shopify store.
-   - Customize and modify the template according to your store's design and requirements.
+## Configuration
 
-2. **Product Detail Section:**
-   - Add the Product Detail section to your theme's sections.
-   - Configure and arrange the section elements as needed.
+The theme comes with a few configuration options that you can set to personalize it for your store. Update the configuration in the `config/settings_data.json` file.
 
-3. **JavaScript Functionality:**
-   - Link product-form.js to your product detail template to enable cart functionalities.
-   - Integrate and adapt the provided JavaScript functions for your specific needs.
+## Customization
+
+### Template Files
+
+- **`templates/index.json`**: Description of the template.
+- **`templates/product.json`**: Description of the template.
+
+### Styles
+
+Customize the styles by editing the CSS files located in the `assets/` folder.
+
+### Translations
+
+Modify the text displayed on the storefront by updating translations in the `locales/` folder.
